@@ -11,7 +11,7 @@
   --black-900: #000000;
   --gray-500: #64748b;
   --white-200: #e2e8f0;
-  --white-500: #F5F5F5;
+  --white-500: #f5f5f5;
   --mainSize-components: 75rem;
   --padding-pattern: 40px 20px;
 }
@@ -74,7 +74,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 150px;
+  gap: 100px;
   align-items: center;
   padding: var(--padding-pattern);
 }
@@ -99,14 +99,93 @@ body {
 
 .experience-component {
   width: var(--mainSize-components);
+  padding: var(--padding-pattern);
   margin: 0 auto;
   display: grid;
+  gap: 180px;
+  align-items: center;
   grid-template-columns: 1fr 2fr;
 }
 
 .experience-component h2 {
   color: #e0e0e0;
   font-size: 8.5rem;
+}
+
+.experience-details {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 60px;
+  color: var(--gray-500);
+  max-width: 80ch;
+}
+
+#highlight {
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.54px;
+  color: var(--black-950);
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background-color: var(--white-500);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.jobs::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: rgb(115, 29, 216);
+  position: absolute;
+  margin: 0 auto;
+  top: 50px;
+  left: -4px;
+}
+
+.job-year {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  font-weight: 400;
+  font-size: 0.97rem;
+}
+
+.title-card {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.card-text {
+  margin-top: 17px;
+  font-size: 0.976rem;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.list-skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.list-skills-item {
+  font-size: 0.976rem;
+  font-weight: 400;
+  line-height: 25px;
+  border-radius: 4px;
+  background: var(--white-500);
+  padding: 10px;
 }
 
 .education-component {
@@ -145,6 +224,7 @@ body {
   padding: 1.5rem;
   width: 204px;
   height: 190px;
+  border-radius: 4px;
 }
 
 .card span {
@@ -159,7 +239,7 @@ body {
   margin-bottom: 50px;
 }
 
-strong {
+.skills {
   color: var(--white-500);
   background: linear-gradient(
     90deg,
