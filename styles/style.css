@@ -27,7 +27,6 @@ html {
 body {
   font-family: Fira Sans, Arial, sans-serif;
   color: var(--black-950);
-  margin-bottom: 90rem;
 }
 
 .main-header {
@@ -222,9 +221,23 @@ body {
   list-style: none;
   background-color: var(--black-900);
   padding: 1.5rem;
-  width: 204px;
-  height: 190px;
+  max-width: 204px;
+  flex: 1;
+  max-height: 190px;
   border-radius: 4px;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: rgb(115, 29, 216);
+  position: absolute;
+  margin: 0 auto;
+  top: 50px;
+  left: -4px;
 }
 
 .card span {
@@ -265,6 +278,10 @@ body {
   font-weight: 700;
 }
 
+.courses {
+  margin-bottom: 1.2rem;
+}
+
 .courses ul {
   padding: 20px 0px;
   list-style: none;
@@ -299,4 +316,48 @@ body {
 
 .language ul li span {
   color: #a3a3a3;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+  color: var(--white-500);
+  width: min-content(100vw, var(--mainSize-components));
+  height: 100vh;
+  padding: 0px 80px;
+  background-color: #000000;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: -12rem;
+}
+
+.contact-me p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.contact-me span {
+  color: gray;
+}
+
+.info-contact {
+  margin: 0 auto;
+  margin-top: -12rem;
+}
+
+.info-contact ul li {
+  display: block;
+  font-size: 2.1rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.info-contact ul li:nth-child(2) {
+  margin: 25px 0px;
 }
