@@ -247,3 +247,56 @@ body {
     rgba(252, 70, 107, 1) 100%
   );
 }
+
+.refactor {
+  margin-top: 50px;
+  width: var(--mainSize-components);
+  color: var(--white-500);
+}
+
+.refactor span {
+  display: flex;
+  gap: 20px;
+  place-items: center;
+}
+
+.refactor span h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.courses ul {
+  padding: 20px 0px;
+  list-style: none;
+}
+
+.courses ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45rem;
+  font-weight: 400;
+  font-size: 0.998rem;
+  /* border: 10px solid red; */
+}
+
+.courses ul li span {
+  color: #a3a3a3;
+}
+
+.language ul {
+  padding: 20px 0px;
+  list-style-type: none;
+}
+
+.language ul li {
+  display: flex;
+  gap: 30px;
+  width: 45rem;
+  font-weight: 400;
+  font-size: 0.998rem;
+}
+
+.language ul li span {
+  color: #a3a3a3;
+}
