@@ -22,25 +22,4 @@
   .navbar-items a {
     padding: 7px;
   }
-
-  .hero-component {
-    grid-template-columns: 1fr 1fr;
-    padding: 0px;
-  }
-
-  .hero-component img {
-    max-width: 260px;
-    max-height: 250px;
-    margin-top: 60px;
-  }
-
-  .introduction-info .intro-title {
-    line-height: 45px;
-    font-size: 2.1rem;
-  }
-
-  .introduction-info .intro-title,
-  p {
-    margin-left: -110px;
-  }
 }
