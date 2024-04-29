@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/media-queries.css">
+  <link rel="stylesheet" href="./styles/gallery.css">
   <title>John Doe - Designer, Social Media and UX/UI Designer</title>
 </head>
 
@@ -38,6 +39,7 @@
       <p>Localizado em SP 🏴󠁢󠁲󠁳󠁰󠁿</p>
     </div>
   </main>
+
 
   <section class="experience-component" id='experience' aria-label="Descrição sobre experiências profissionais">
     <h2>EXPE<br>RIÊN<br>CIA</h2>
@@ -83,6 +85,47 @@
 
       </div>
   </section>
+
+  <h1 class='slider-title'>Conheça minha arte!</h1>
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+
+      <div class="slide first">
+        <img src="./assets/img-01.webp" fetchpriority="high" loading="lazy">
+      </div>
+      <div class="slide">
+        <img src="./assets/img-02.webp" fetchpriority="high" loading="lazy">
+      </div>
+      <div class="slide">
+        <img src="./assets/img-03.webp" fetchpriority="high" loading="lazy">
+      </div>
+      <div class="slide">
+        <img src="./assets/img-04.webp" fetchpriority="high" loading="lazy">
+      </div>
+
+
+
+      <div class="nav-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+    </div>
+    <div class="manual-nav">
+      <label for="radio1" class='manual-btn'></label>
+      <label for="radio2" class='manual-btn'></label>
+      <label for="radio3" class='manual-btn'></label>
+      <label for="radio4" class='manual-btn'></label>
+    </div>
+  </div>
+
+
 
   <section class="education-component" id='education'>
     <h2>FORM<br>AÇÃO</h2>
@@ -152,7 +195,7 @@
       <ul>
         <li>johndoe@icloud.com</li>
         <li>+55 11 0000-0000</li>
-        <li>@johnde.profile</li>
+        <li>@johndoe.profile</li>
       </ul>
     </div>
   </footer>
